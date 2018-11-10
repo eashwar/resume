@@ -265,10 +265,10 @@
 \newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
 \newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
+\newcommand*{\lettertextstyle}[1]{{\fontsize{13pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
-\newcommand*{\letteropenclosestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\upshape\color{darkgreen} #1}}
+\newcommand*{\letteropenclosestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\upshape\color{darkgreen} #1}}
 \newcommand*{\letterheaderfirstnamestyle}[1]{{\fontsize{22pt}{1em}\headerfontlight\color{green} #1}}
 \newcommand*{\letterheaderlastnamestyle}[1]{{\fontsize{22pt}{1em}\headerfont\bfseries\color{darkgreen} #1}}
 

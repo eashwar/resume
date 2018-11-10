@@ -1,0 +1,56 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{riot-cover-letter/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{green}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+
+    \begin{flushleft}
+        \letterheaderfirstnamestyle{Eashwar} \letterheaderlastnamestyle{Mohan}
+    \end{flushleft}
+
+    \begin{flushright}
+        \vspace{-10mm}
+        {\color{darkgreen}{\faEnvelope\ \bodyfont{eashwar@umich.edu}}}\\
+        {\color{darkgreen}{\faMapMarker\ \bodyfont{Ann Arbor, MI}}}\\
+    {\color{darkgreen}{\faLink\ \bodyfont{eashwar.github.io}}}
+    \end{flushright}
+
+    \recipientname{Riot Games}
+    \letterdate{17 September 2018}
+
+    \letteropenclosestyle{To whom it may concern:}\\\\
+
+    \lettertextstyle{Hello! My name is Eashwar Mohan, and I'm a student working towards a BSE in computer science and minor in music at the University of Michigan. I'm writing this to express my interest in a software engineering internship at [COMPANY] for Summer 2019. [CONNECTION TO COMPANY]. With my diverse set of experiences, I am confident in my strength as a candidate for the internship position.}\\
+
+    \lettertextstyle{At the University of Michigan, I'm involved with various organizations that are helping me grow to be a professional with a versatile skillset. I am currently the VP of Treasury for the FIRST Alumni and Mentors Network at Michigan (FAMNM), a volunteer organization benefitting STEM students in K-12 participating in FIRST robotics programs. In my role, I manage the organization's budget; apply for event funding from various sources, and perform fundraising tasks to help establish a FIRST Scholarship at the University of Michigan, which will be for underprivileged or first-generation freshman. Along with my work in FAMNM, I am a Speaker and Director of Online Communications for the Video Game Music Club. This club, of which I am a co-founder, serves as a place for students who are interested in the game audio industry to interact with, learn, compose, and discuss ideas with each other. Finally, I am on the web development team for the Michigan Hackers club, where I work to help maintain and improve the club's website.}\\
+
+    \lettertextstyle{I feel that my broad range of experiences both on campus and at previous internships would enable me to be an effective, communicative, and hard-working teammate at [COMPANY]. It would be an incredible experience to intern there and I truly believe that my experience can be put to great use. Thank you for considering me as a candidate and I hope to hear from you soon.}\\
+
+    \letteropenclosestyle{Regards,}\\
+
+    \letteropenclosestyle{Eashwar Mohan}
+
+\end{document}
