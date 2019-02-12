@@ -108,7 +108,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=1.5cm, top=1.25cm, right=1.5cm, bottom=1.25cm, footskip=.5cm}
+\geometry{left=1.5cm, top=1.2cm, right=1.5cm, bottom=1.2cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -265,7 +265,7 @@
 \newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
 \newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\lettertextstyle}[1]{{\fontsize{13pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\lettertextstyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 \newcommand*{\letteropenclosestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\upshape\color{darkgreen} #1}}
