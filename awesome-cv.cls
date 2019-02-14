@@ -108,7 +108,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=1.5cm, top=1.2cm, right=1.5cm, bottom=1.2cm, footskip=.5cm}
+\geometry{left=1.5cm, top=1.25cm, right=1.5cm, bottom=1.25cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
