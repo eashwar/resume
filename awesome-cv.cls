@@ -180,43 +180,35 @@
 \newfontfamily\headerfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
-  ItalicFont=*-Italic,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-BoldItalic,
-]{Roboto}
-
-\newfontfamily\headerfontlight[
-  Path=\@fontdir,
-  UprightFont=*-Thin,
-  ItalicFont=*-ThinItalic,
-  BoldFont=*-Medium,
-  BoldItalicFont=*-MediumItalic,
-]{Roboto}
+  ItalicFont=*-Regular,
+  BoldFont=*-Regular,
+  BoldItalicFont=*-Regular,
+]{RampartOne}
 
 % Set font for footer (default is Source Sans Pro)
 \newfontfamily\footerfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
-  ItalicFont=*-It,
+  ItalicFont=*-Italic,
   BoldFont=*-Bold
-]{SourceSansPro}
+]{Labrada}
 
 % Set font for body (default is Source Sans Pro)
 \newfontfamily\bodyfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
-  ItalicFont=*-It,
+  ItalicFont=*-Italic,
   BoldFont=*-Bold,
-  BoldItalicFont=*-BoldIt
-]{SourceSansPro}
+  BoldItalicFont=*-BoldItalic
+]{Labrada}
 
 \newfontfamily\bodyfontlight[
   Path=\@fontdir,
   UprightFont=*-Light,
-  ItalicFont=*-LightIt,
+  ItalicFont=*-LightItalic,
   BoldFont=*-Semibold,
-  BoldItalicFont=*-SemiboldIt
-]{SourceSansPro}
+  BoldItalicFont=*-SemiBoldItalic
+]{Labrada}
 
 
 %-------------------------------------------------------------------------------
@@ -224,23 +216,23 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{blurple} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{purple} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{awesome} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{awesome} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{blurple}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{18pt}{1em}\bodyfont\bfseries\color{awesome}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{purple} #1}}
 % \newcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{text} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{text}\textbf{#1}}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{purple} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{text} #1}}
 \newcommand*{\skill}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} \textnormal{#1}}}
 
 % For elements of subentry
@@ -270,7 +262,7 @@
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 \newcommand*{\letteropenclosestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\upshape\color{purple} #1}}
-\newcommand*{\letterheaderfirstnamestyle}[1]{{\fontsize{22pt}{1em}\headerfontlight\color{blurple} #1}}
+\newcommand*{\letterheaderfirstnamestyle}[1]{{\fontsize{22pt}{1em}\headerfont\color{blurple} #1}}
 \newcommand*{\letterheaderlastnamestyle}[1]{{\fontsize{22pt}{1em}\headerfont\bfseries\color{purple} #1}}
 
 
@@ -443,7 +435,7 @@
               \setbool{isstart}{false}
             }
             {\@headersocialsep}
-          \href{http://\@link}{\faLink\ \@link}
+          \href{https://\@link}{\faLink\ \@link}
         }
       \ifthenelse{\isundefined{\@github}}
         {}
@@ -575,7 +567,17 @@
     \multicolumn{2}{L{17cm}}{\descriptionstyle{#5}} \\
   \end{tabular*}
 }
-
+\newcommand*{\projentry}[5]{
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.5cm}}
+    \ifempty{#2#3}
+      {\descriptionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+      \descriptionstyle{#1} & \entrydatestyle{#4} \\}
+    \multicolumn{2}{L{17cm}}{\descriptionstyle{#5}} \\
+  \end{tabular*}
+}
 
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{
@@ -639,7 +641,7 @@
 \newenvironment{cvitems}{
   \vspace{-4mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=-3.5em, nosep, noitemsep]
+  \begin{itemize}[leftmargin=-3.5em, itemsep=.2em]
     \setlength{\parindent}{0pt}
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
