@@ -137,7 +137,7 @@
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{604093}
 \definecolor{red}{HTML}{FB4485}
-\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{blue}{HTML}{3d566c}
 \definecolor{blurple}{HTML}{93A0F7}
 % Text colors
 \definecolor{darktext}{HTML}{414141}
@@ -183,7 +183,7 @@
   ItalicFont=*-Regular,
   BoldFont=*-Regular,
   BoldItalicFont=*-Regular,
-]{RampartOne}
+]{Technotot}
 
 % Set font for footer (default is Source Sans Pro)
 \newfontfamily\footerfont[
@@ -216,8 +216,8 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{awesome} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{awesome} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{30pt}{1em}\headerfont\color{awesome} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{30pt}{1em}\headerfont\bfseries\color{awesome} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{text} #1}}
@@ -227,11 +227,11 @@
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{purple} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{blue} #1}}
 % \newcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{text}\textbf{#1}}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{purple} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{blue} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{text} #1}}
 \newcommand*{\skill}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} \textnormal{#1}}}
 
@@ -261,9 +261,9 @@
 \newcommand*{\lettertextstyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
-\newcommand*{\letteropenclosestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\upshape\color{purple} #1}}
+\newcommand*{\letteropenclosestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\upshape\color{blue} #1}}
 \newcommand*{\letterheaderfirstnamestyle}[1]{{\fontsize{22pt}{1em}\headerfont\color{blurple} #1}}
-\newcommand*{\letterheaderlastnamestyle}[1]{{\fontsize{22pt}{1em}\headerfont\bfseries\color{purple} #1}}
+\newcommand*{\letterheaderlastnamestyle}[1]{{\fontsize{22pt}{1em}\headerfont\bfseries\color{blue} #1}}
 
 
 
